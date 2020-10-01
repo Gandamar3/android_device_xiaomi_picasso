@@ -31,7 +31,15 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+<<<<<<< HEAD
 # ANT+
+=======
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
+# health HAL
+>>>>>>> ffd4bc54... wahoo: Remove packages at build time
 PRODUCT_PACKAGES += \
     AntHalService-Soong
 
